@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f955c68031.js" crossorigin="Anonymous"></script>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body style="background-color:#17a2b8;">
+
+    <main style="display: flex; flex-direction: column; align-items: center;">
+
+        <div
+            style="background-color: white; margin-top: 10rem; padding-top: 5rem;padding-bottom: 3rem;display: flex; flex-direction: column; align-items: center; border-radius: 15px; max-width: 35rem;">
+
+            <div>
+
+            </div>
+            <div class="title" style="padding-bottom: 3rem;">
+                <h3 style="color: black; font-size: 2.8rem;">Instituto San Jos&eacute;</h3>
+            </div>
+
+            <input type="hidden" name="institucion" value="san-jose-liniers">
+            <div style="padding-right: 5rem; padding-left: 5rem;" class="row">
+                <div class="col-12 form-group">
+                    <input type="text" class="form-control" placeholder="Usuario" name="j_username" value=""
+                        required="required" autofocus>
+                </div>
+                <div class="col-12 form-group">
+                    <!-- ko with: password -->
+                    <div class="input-group">
+                        <input class="form-control " placeholder="Contrase&ntilde;a" name="j_password" value="" required
+                            autocomplete="off" data-bind="attr: { type: passwordType }">
+
+                    </div>
+                    <!-- /ko -->
+                </div>
+                <div class="col-12 offset-mb-3 mb-3">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block"
+                        style="background-color:#17a2b8;">Ingresar</button>
+                </div>
+
+                <div class="col-12 my-3" style="text-align: center; padding-bottom: 2rem; ">
+                    <a href="/j_spring_security_facebook_redirect" class="btn btn-secondary btn-facebook"
+                        style="background-color: #007bff;padding: 0.8rem; margin-top: 0rem;">
+                        INGRESAR CON FACEBOOK
+                    </a>
+                </div>
+            </div>
+
+            <div class="actions">
+                <div class="col-md-12">
+
+                    <a style="font-size: 1.1rem;" href="/no-puedo-ingresar?institucion=san-jose-liniers"
+                        title="Hac&eacute; click aqu&iacute; si tenes problema para ingresar a tu cuenta de Acadeu">No
+                        puedo ingresar</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <p style="font-size: 1.1rem;" class="text-center">¿Necesitás ayuda?</p>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

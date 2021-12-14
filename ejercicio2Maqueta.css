@@ -1,0 +1,232 @@
+/*tamaño del menu*/
+*{
+margin: 0;
+padding:0%;
+}
+
+nav{
+    height: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: #1A75E6;
+    
+}
+
+h1{
+    color: white;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header{
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*tamaño y fuente de la letra instituto*/
+.navbar-brand{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.nav-link{
+    color:white;
+    font-size: 20px;
+}
+/*tamaño del logo*/
+i{
+font-size: 90px;
+color: white;
+
+
+}
+/*Botones de la imagen*/
+.carousel-caption{
+    top:120px;
+}
+/*el mensaje dentro de jumbotron*/
+h5{
+    font-size: 20px;
+    margin-left:100%;
+   color: white;
+   padding-inline: 70px;
+   padding-bottom: 80px;
+   
+}
+/*el diseño del mensaje*/
+.jumbotron{
+    background-color: #1A75E6;
+    width: 80%;
+   margin-left:90px;
+   
+}
+/*Titulo ideario*/
+h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 95px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.h3{
+    color: white;
+}
+/*parrafo de ideario y la parte del footer*/
+.parrafo{
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+
+}
+
+/*boton en el sector*/
+.col-sm-4{
+  
+    background-color:white;
+    color: yellow;
+   text-align: center;
+    width: 5px;
+    
+    border: 5px ;
+    padding: 10px 5px 5px 5px;
+  
+}
+.primaria{
+    width: 50%;
+    height: 20rem;
+    
+}
+
+
+/*Autoridades*/
+h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin: 50px;
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+   
+}
+
+.p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+h6{
+    font-size: 24px;
+}
+p{
+    line-height:1.5;
+}
+.boton{
+    margin-bottom: 3%;
+}
+.buton{
+    margin: 1%;
+}
+.encabezado{
+    text-align: center;
+    border: 0.5px solid white;
+    margin:5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Solicitud de Vacante*/
+.titulo{
+    color: white;
+}
+.blanco{
+    color:white
+}
+.verde{
+    padding: 18px;
+    margin: 7px;
+}
+.texto{
+    line-height:1.5 ;
+    margin-top: 30px;
+}
+
+
+/*Nahuel*/
+
+.subtexto{
+    color: #2E8931;
+}
+
+.img1{
+    width: 100%;
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;  
+    margin-left: 50px; 
+}
+
+@media (min-width: 842px) {
+    .card-border{
+        border: solid 10px white;
+        border-radius: 20px;
+        background-color: white;
+        overflow: hidden;
+        width: 80%;
+        text-align: center; 
+    }
+}
+/* paginal secundaria*/
+
+.titulos{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+footer{
+background-color: #1A75E6;
+line-height: 80px;
+}
+.tifo{
+   font-size: 35px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 190px;
+
+
+}
+.columnas1{
+    font-size: 10px;
+    line-height: 1.5;
+    
+}
+.columnas{
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 18px;
+    margin-left: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.redes{
+    margin-left: 110px;
+    font-size: 10px;
+}
+.icono{
+    color:#3079CB;
+    font-size: 300px;
+}
+.fondos{
+    background-color:#D8F0DF;
+}
