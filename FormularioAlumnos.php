@@ -54,43 +54,58 @@
 
   <div class="container">
     <h3>Aspirante al Ciclo lectivo 2022</h3>
-    <form action="/action_page.php">
+    <form id="student" action="students.php" method="post" name="student-form">
         <div class="form-group">
           <label for="name">Nombre:</label>
-          <input type="name" class="form-control" placeholder="Nombre del Alumno" id="name">
+          <input type="text" class="form-control" placeholder="Nombre del Alumno" name="name">
         </div>
         <div class="form-group">
             <label for="lastname">Apellido:</label>
-            <input type="name" class="form-control" placeholder="Apellido del Alumno" id="lastname">
+            <input type="text" class="form-control" placeholder="Apellido del Alumno" name="lastname">
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" placeholder="Email del Alumno" id="email">
+            <input type="email" class="form-control" placeholder="Email del Alumno" name="email">
         </div>
         <div class="form-group">
             <label for="dni">DNI:</label>
-            <input type="dni" class="form-control" placeholder="DNI del Alumno" id="dni">
+            <input type="text" class="form-control" placeholder="DNI del Alumno" name="dni">
         </div>
         <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input type="password" class="form-control" placeholder="Password del Alumno" id="pwd">
+          <label for="pass">Password:</label>
+          <input type="password" class="form-control" placeholder="Password del Alumno" name="pass">
         </div>
         <div class="form-group">
             <label for="pwd">Confirme el Password:</label>
-            <input type="password" class="form-control" placeholder="Reingrese el Password del Alumno" id="pwd">
+            <input type="password" class="form-control" placeholder="Reingrese el Password del Alumno" name="pass_again">
           </div>
           <div class="form-group">
             <label for="telefono">Telefono:</label>
-            <input type="dni" class="form-control" placeholder="DNI del Alumno" id="dni">
+            <input type="text" class="form-control" placeholder="Ingrese el telefono del Alumno" name="telefono">
         </div>
         <label for="Nivel">Nivelación: </label>
-         <select class="form-control" id="Nivel1" name="Nivel1">
-            <option>Inicial</option>
-            <option>Primario</option>
-            <option>Secundaria</option>
+         <select class="form-control" id="nivelacion" name="nivelacion">
+            <option selected="selected" disabled>Seleccione la nivelacion</option>
+            <?php
+              try {
+                include_once 'config/db.php';
+                $stmt = "SELECT * FROM nivelacion";
+                $resultado = $conn->query($stmt);
+              } catch (Exception $e) {
+                $error =$e->getMessage();
+                echo $error;
+              }
+                while($nivelacion = $resultado->fetch_assoc()) {
+            ?>
+
+                <option value="<?php echo $nivelacion['id_nivelacion']; ?>"><?php echo $nivelacion['nivelacion_name']; ?></option>
+
+            <?php } ?>
         </select>
         <br><br>
-        <button type="button" class="btn btn-primary">Guardar</button>
+        <input type="hidden" name="role" value="2">
+        <input type="hidden" name="student-form" value="add">
+        <button type="submit" class="btn btn-primary">Guardar</button>
       </form>
 </div>
 <br><br>
